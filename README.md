@@ -61,6 +61,8 @@ Read with care:
 - The reranker mainly lifts ans@3 (0.82 → 0.92). The confidence intervals overlap, and it costs ~10 s per query on 8 GB.
 - On the out-of-collection questions (D) the top rerank score stayed ≤ 0.001, which makes a usable "not in the
   library" signal. It is not a perfect one: 2 of the 62 answerable questions also scored below 0.11.
+- The questions and answer keys were drafted with AI assistance and graded automatically in a single run,
+  so these are development numbers, not a final evaluation.
 - These are 62 questions on one library. Treat the numbers as indicative.
 
 Full numbers: [eval/results/summary_20261117.json](eval/results/summary_20261117.json).
